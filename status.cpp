@@ -33,7 +33,7 @@ int main() {
     ofstream projectOutFile(projectFileName);
     ofstream activitiesOutFile(activitiesFileName);
     ofstream notesOutFile(notesFileName);
-
+    system("clear");
     cout << "+++++++++++++ Welcome +++++++++++++" << endl;
     sleep(3);
     system("clear");
@@ -62,7 +62,7 @@ int main() {
                             fclose(ptr);
                         }
                         } else {
-                            ptr = fopen(projectFileName, "w");
+                            ptr = fopen(projectFileName, "a");
                             if (ptr == NULL) {
                                 cout << "no file exists" << endl;
                             } else {
@@ -98,7 +98,7 @@ int main() {
                     }
                     } else {
                         
-                        ptr = fopen(projectFileName, "w");
+                        ptr = fopen(projectFileName, "a");
                         if (ptr == NULL) {
                             cout << "no file exists" << endl;
                         } else {
@@ -133,7 +133,7 @@ int main() {
                         fclose(ptr);
                     }
                     } else {
-                        ptr = fopen(notesFileName, "w");
+                        ptr = fopen(notesFileName, "a");
                         if (ptr == NULL) {
                             cout << "no file exists" << endl;
                         } else {
